@@ -34,14 +34,14 @@ gulp.task('concat', ['sass'], function () {
 });
 
 /* purify css */
-gulp.task('build', function() {
+gulp.task('purify', function() {
     return gulp.src('app/css/bundle.css')
         .pipe(purify(['app/index.html'], { minify: true }))
         .pipe(gulp.dest('app/css/'));
 });
 
 /* concat js into one file */
-gulp.task('build-scripts', ['concat'], function() {
+gulp.task('build', ['concat'], function() {
     return gulp.src(['dev/js/jquery.min.js', 'dev/js/main.js' ])
         .pipe(concat({ path: 'bundle.js' }))
         .pipe(gulp.dest('app/js/'));
