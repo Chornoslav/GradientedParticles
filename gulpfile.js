@@ -41,7 +41,7 @@ gulp.task('build', function() {
 });
 
 /* concat js into one file */
-gulp.task('build-scripts', function() {
+gulp.task('build-scripts', ['concat'], function() {
     return gulp.src(['dev/js/jquery.min.js', 'dev/js/main.js' ])
         .pipe(concat({ path: 'bundle.js' }))
         .pipe(gulp.dest('app/js/'));
