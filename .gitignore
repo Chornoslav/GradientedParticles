@@ -1,5 +1,3 @@
 node_modules
 .idea
 dev/css/main.css
-app/css/bundle.css
-app/js/bundle.js
