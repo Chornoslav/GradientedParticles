@@ -19,7 +19,7 @@ gulp.task('start', ['concat'], function() {
 });
 
 /* converting sass -> css */
-gulp.task('sass', ['build-scripts'], function () {
+gulp.task('sass', function () {
     return gulp.src("dev/scss/*.scss")
         .pipe(sass())
         .pipe(gulp.dest("dev/css"));

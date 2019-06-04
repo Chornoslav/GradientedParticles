@@ -235,10 +235,11 @@ body {
 }
 
 main {
-  background-image: radial-gradient(circle, #cb7071 10%, #1c36a6 60%);
+  background-image: radial-gradient(circle, #cb7071 1%, #1c36a6 75%);
   background-size: 200% 200%;
+  min-height: 100vh;
   height: 1600px;
-  animation: AnimationName 15s linear infinite;
+  animation: AnimationName 8s linear infinite;
 }
 
 @keyframes AnimationName {
@@ -261,20 +262,7 @@ main {
   100% {
     background-position: 0 70%;
   }
-
-  /*0%{background-position:0 70%}*/
-  /*10%{background-position:2% 62%}*/
-  /*20%{background-position:5% 57%}*/
-  /*25%{background-position:8% 50%}*/
-  /*30%{background-position:5% 42%}*/
-  /*40%{background-position:2% 35%}*/
-  /*50%{background-position:0 30%}*/
-  /*60%{background-position:2% 35%}*/
-  /*70%{background-position:5% 42%}*/
-  /*75%{background-position:8% 50%}*/
-  /*80%{background-position:5% 58%}*/
-  /*90%{background-position:3% 62%}*/
-  /*100%{background-position:0 70%}*/}
+}
 
 canvas {
   display: block;
